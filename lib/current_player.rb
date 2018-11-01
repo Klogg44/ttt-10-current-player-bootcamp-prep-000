@@ -1,5 +1,5 @@
 def current_player(board)
-  if turn_counter(board).even?
+  if turn_count(board).even?
     "X"
   else
     "O"
