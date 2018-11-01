@@ -1,12 +1,5 @@
 def current_player(board)
-  counter = 0
-  board.each do |space|
-    if space == "X" || space == "O"
-      counter += 1
-    end
-  end
-
-  if counter.even?
+  if turn_counter(board).even?
     "X"
   else
     "O"
